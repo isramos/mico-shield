@@ -1,6 +1,14 @@
 /*
-Test receiving DTMF tones using interrupts
- */
+
+
+Use this sketch to verify that MICO is receiving DTMF codes. 
+When the DTMF IC decodes a tone it raises 'dr' pin.
+
+
+6-6-2013
+Igor Ramos
+
+*/
 
 char data_ready_status=0, DTMF_RX_BUFFER=0;
 char dr_serviced=0;
