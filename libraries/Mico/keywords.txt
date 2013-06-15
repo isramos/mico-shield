@@ -1,0 +1,8 @@
+dtmf_ascii 		KEYWORD2
+dtmf_ascii2dec 	KEYWORD2
+mapfloat 		KEYWORD2
+Temperature		KEYWORD2
+DTMF_available	KEYWORD2
+DTMF_read		KEYWORD2
+data_ready_int	KEYWORD2
+dtmf_get_data	KEYWORD2
