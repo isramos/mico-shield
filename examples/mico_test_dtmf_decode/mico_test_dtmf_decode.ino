@@ -1,5 +1,12 @@
 /*
+MICO Shield for Arduino
+by Igor Ramos
+http://www.dossant.com
+
 Test receiving DTMF tones using interrupts
+
+6-15-2013
+
  */
 
 char data_ready_status=0, DTMF_RX_BUFFER=0;
