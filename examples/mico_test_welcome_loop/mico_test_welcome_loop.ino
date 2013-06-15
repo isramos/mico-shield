@@ -1,12 +1,10 @@
 /*
+MICO Shield for Arduino
+by Igor Ramos
+http://www.dossant.com
 
-SD library used in this example is called Simple SD Audio 
-and can be found at:
-
- See SimpleSDAudio.h or our website for more information:
- http://www.hackerspace-ffm.de/wiki/index.php?title=SimpleSDAudio
- 
- created  23 Jun 2012 by Lutz Lisseck
+Library used in this sketch:
+SimpleSDAudio -  by Lutz Lisseck (23 Jun 2012)
  
  */
 #include <SimpleSDAudio.h>
