@@ -57,11 +57,6 @@ void data_ready_int()  //interrupt service routine
       DTMF_RX_BUFFER = dtmf_get_data(); //read 4 dig ins and put into byte. Need to do now before it vanishes
 }
 
-
-
-
-
- 
  
  //--- the stuff below can go to dtmf_lib
 
