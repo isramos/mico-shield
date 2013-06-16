@@ -1,4 +1,4 @@
-dtmf_ascii 		KEYWORD2
+dtmf_ascii 		KEYWORD1
 dtmf_ascii2dec 	KEYWORD2
 mapfloat 		KEYWORD2
 Temperature		KEYWORD2
