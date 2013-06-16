@@ -1,4 +1,10 @@
 mico
 
-this is a test file for the mico project
+
+for help on how to install mico library visit: 
+http://arduino.cc/en/Guide/Libraries
+
+
+-Igor Ramos
+6-15-2013
 ====
