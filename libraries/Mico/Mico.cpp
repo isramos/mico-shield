@@ -3,6 +3,10 @@
 char data_ready_status=0;
 char _DTMF_RX_BUFFER;	
 
+unsigned int audioIn_ADCmax =0;
+unsigned int audioIn_ADCmin =1023;
+
+
 //<<constructor>> setup the LED, make pin 13 an OUTPUT
 MICO::MICO(){
   
@@ -176,6 +180,14 @@ bool MICO::is_phone_ringing(void)
      _ring_cnt =0;    //reset counter if no loud enough signal within certain time. default=2000ms
    }
   
+ //uncomment for debugging
+   // Serial.print("Vpp= ");  			//debug
+   // Serial.print(audioIn_SH_Vpp());  //debug 
+   // Serial.print(" max=");  			//debug
+   // Serial.print(audioIn_ADCmax,DEC);  //debug 
+   // Serial.print(" min=");  				//debug
+   // Serial.println(audioIn_ADCmin,DEC);  //debug 
+   
    audioIn_SH_reset();  //reset S&H
    
    if (_ring_cnt > RD_CNT_THR)
@@ -191,14 +203,12 @@ bool MICO::is_phone_ringing(void)
  
 }
 
-unsigned int audioIn_ADCmax =0;
-unsigned int audioIn_ADCmin=0xffff;
 
 void MICO::audioIn_SH_run (void)
 {
-
   
-  unsigned char sensorValue = analogRead(_audioinPin);   // read the value from the sensor:
+  unsigned int sensorValue = analogRead(_audioinPin);   // read the value from the sensor:
+  //
   
   if (sensorValue > audioIn_ADCmax)
     audioIn_ADCmax = sensorValue;
@@ -220,19 +230,23 @@ function: audioIn_Vpp_SH
 */
 float MICO::audioIn_SH_Vpp()
 {
-  unsigned int AudioIn_ADCVpp = audioIn_ADCmax - audioIn_ADCmin;
-  
-  /* convert raw ADC into Volts */
-  return mapfloat((float)AudioIn_ADCVpp, 0,1023,0.0F,5.0F);;
+
+	if (audioIn_ADCmax <= audioIn_ADCmin)
+		return 0.0F;
+	
+	unsigned int AudioIn_ADCVpp = audioIn_ADCmax - audioIn_ADCmin;
+
+	/* convert raw ADC into Volts */
+	return mapfloat((float)AudioIn_ADCVpp, 0,1023,0.0F,5.0F);;
 }
 
 
-void MICO::audioIn_SH_reset (void)
+void MICO::audioIn_SH_reset(void)
 {
   
   audioIn_ADCmax =0;
  
-  audioIn_ADCmin=0xffff;
+  audioIn_ADCmin=1023;
   
   return;
 }
