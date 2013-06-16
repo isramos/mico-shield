@@ -24,12 +24,13 @@ int noteDurations[] = {
   4, 8, 8, 4,4,4,4,4 };
 
 void setup() {
-
+ Serial.begin(9600);
 }
 
 void loop() {
   
   while(1){
+    Serial.println(F("playing melody"));
   // iterate over the notes of the melody:
   for (int thisNote = 0; thisNote < 8; thisNote++) {
 
