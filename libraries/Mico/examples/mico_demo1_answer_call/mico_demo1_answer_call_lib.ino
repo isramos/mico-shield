@@ -1,15 +1,16 @@
 /*
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com
+http://www.dossant.com/mico
 
----
+This example monitors the AudioIn and determines if
+phone is rining. Then it answers the call and play
+welcome message to caller.
 
-This is the code used in demo vide that I have on kickstarter 
-Connect an LED to A3
+Caller uses phone dtmf to remotelly control arduino
 
-Igor to enter a better description here
----
+This is the sketch used in the kickstarter pitch video
+Optionally connect an LED to A3
 
 This sketch uses work from:
 Lutz Lisseck - SimpleSDAudio library

@@ -1,7 +1,7 @@
 /*
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com
+http://www.dossant.com/mico
 
 Test receiving DTMF tones using interrupts
 

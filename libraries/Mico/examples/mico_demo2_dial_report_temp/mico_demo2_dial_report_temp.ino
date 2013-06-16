@@ -1,7 +1,7 @@
 /*
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com
+http://www.dossant.com/mico
 
 This sketch will place a call to the last dialed number and 
 report temp in Fahrenheit.

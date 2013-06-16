@@ -1,6 +1,8 @@
-// working just fine - Igor 3-26-2013
-
 /*
+MICO Shield for Arduino
+by Igor Ramos
+http://www.dossant.com/mico
+
 based on code by:
 Milan Malesevic and Zoran Stupic 2011
 

@@ -1,7 +1,7 @@
 /*
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com
+http://www.dossant.com/mico
 
 Library used in this sketch:
 SimpleSDAudio -  by Lutz Lisseck (23 Jun 2012)

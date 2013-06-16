@@ -1,16 +1,17 @@
 /*
-MICO
+MICO Shield for Arduino
+by Igor Ramos
+http://www.dossant.com/mico
 
 sketch purpose: play melody on MICO SPK jack, loop indefinetely
-6/5/2013
-by Igor Ramos - 
-http://dossant.com
 
 code based on Tom Igoe's toneMelody example
 
 This example code is in the public domain.
- 
- */
+
+6/5/2013
+
+*/
  
  #include "pitches.h"
 
