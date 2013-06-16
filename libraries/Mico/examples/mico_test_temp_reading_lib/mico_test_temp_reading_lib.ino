@@ -1,8 +1,13 @@
-// working just fine - Igor 3-26-2013
-
 /*
-based on code by:
-Milan Malesevic and Zoran Stupic 2011
+MICO Shield for Arduino
+by Igor Ramos
+http://www.dossant.com/mico
+
+reads the temp of the thermocouple
+in degC and degF
+
+
+6-16-2013
 
 */
 

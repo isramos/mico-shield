@@ -1,8 +1,7 @@
-
 /*
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com
+http://www.dossant.com/mico
 
 This sketch is to assist setting you MICO. It help you in getting the MIC polarity right 
 and setting the phone volume.
