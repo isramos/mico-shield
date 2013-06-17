@@ -1,7 +1,7 @@
 mico
 
 
-for help on how to install mico library visit: 
+for help on how to install an arduino library: 
 http://arduino.cc/en/Guide/Libraries
 
 
