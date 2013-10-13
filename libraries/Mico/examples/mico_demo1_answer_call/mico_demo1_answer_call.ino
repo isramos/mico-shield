@@ -1,7 +1,7 @@
 /*
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com/mico
+http://www.HelloMICO.com
 
 This example monitors the AudioIn and determines if
 phone is rining. Then it answers the call and play

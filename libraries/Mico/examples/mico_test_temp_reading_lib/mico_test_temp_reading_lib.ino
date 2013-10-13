@@ -1,7 +1,7 @@
 /*
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com/mico
+http://www.HelloMICO.com
 
 reads the temp of the thermocouple
 in degC and degF

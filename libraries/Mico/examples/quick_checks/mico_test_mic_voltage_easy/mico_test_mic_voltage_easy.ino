@@ -1,7 +1,7 @@
 /*
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com/mico
+http://www.HelloMICO.com
 
 This sketch is to diagnose the MIC polarity right.
 It will tell you the mic bias voltage reading and tell y

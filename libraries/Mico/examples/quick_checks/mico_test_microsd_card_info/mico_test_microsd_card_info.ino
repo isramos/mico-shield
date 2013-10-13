@@ -1,7 +1,7 @@
 /* 
 MICO Shield for Arduino
 by Igor Ramos
-http://www.dossant.com/mico
+http://www.HelloMICO.com
 
 This is the best sketch I found to test microSD cards.
 I tested to work with both SD and SDHC cards.
