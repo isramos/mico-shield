@@ -3,6 +3,7 @@ MICO Shield for Arduino
 by Igor Ramos
 http://www.HelloMICO.com
 
+date 10-21-2013
 ---
 This sketch is a end-of-line testing for MICO.
 ---
@@ -11,11 +12,10 @@ This sketch uses work from:
 Lutz Lisseck - SimpleSDAudio library
 Milan Malesevic and Zoran Stupic - thermistor
 
-10-14-2013
+
 
 TO DO 1: add time out for TEST 2 and TEST 3. 10-15sec
-TO DO 2: review the prompts to look better
-TO DO 3: add considering a temp sensor in range check e.g. 0C to 70C
+TO DO 2: add considering a temp sensor in range check e.g. 0C to 70C
  
  
 */
