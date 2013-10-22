@@ -172,7 +172,8 @@ char err;
             else if (say_word == w_help) err=SdPlay.setFile("help.RAW");
             else if (say_word == dtmf0) err=SdPlay.setFile("DTMF-0.RAW");
             else if (say_word == dtmf1) err=SdPlay.setFile("DTMF-1.RAW");
-            
+			else if (say_word == dtmf2) err=SdPlay.setFile("DTMF-2.RAW");
+
             else
             {  
               Serial.println(F("Error: word not in list"));
@@ -266,16 +267,38 @@ void show_result(unsigned char testres)
 
 void test_dtmf()
 {
-  Serial.println(F("\n\rTEST 2."));
+  unsigned char rxdtmf; 
+   attachInterrupt(0, data_ready_int , RISING);  //enable dtmd rx int
+    
+   Serial.println(F("\n\rTEST 2."));
 
    Serial.println(F("\n\r >ACTION: Add jumper wire between JP5 pin2 to JP10 pin4"));
   
-    while( dtmf_flag == 0  )
+    while( dtmf_flag != 0b00000111  )
     {
-      say_word (dtmf0);
-      delay(100);
-      if (check_for_dtmf_in() == '0') 
-        dtmf_flag = 1 ;
+      if ( (dtmf_flag&1)!=1 )
+      {
+        say_word (dtmf0);
+
+      }
+      else if ((dtmf_flag&2)!=2 )
+      {
+        say_word (dtmf1);
+      }
+      else if((dtmf_flag&4)!=4)
+      {
+        say_word (dtmf2);
+      }
+      rxdtmf = check_for_dtmf_in();
+      if (rxdtmf == '0') 
+        dtmf_flag |= 1 ;
+      else if (rxdtmf == '1') 
+        dtmf_flag |= 2 ;
+      else if (rxdtmf == '2') 
+        dtmf_flag |= 4 ;
+        
+      delay(50);
+
       
     }
   //play sound
